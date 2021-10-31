@@ -25,11 +25,34 @@ else {
 
 //Write a program to find the maximum and minimum out of two given numbers. The numbers are num1=129 and num2=251.
 
-var num1=129;
+/*var num1=129;
 var num2=251;
 
 var maxi= Math.max(num1,num2);
 var mini= Math.min(num1,num2);
 
 console.log("Minimum number is "+mini);
-console.log("Maximum number is "+maxi);
+console.log("Maximum number is "+maxi);*/
+
+// Write a program to find the maximum out of three given numbers. The numbers are num1=8, num2=23 and num3=17.
+
+var num1=8; 
+var num2=23;
+var num3=17;
+
+if(num1>num2) {
+	if(num1>num3) {
+		console.log(num1+" is maximum");
+	}
+	else {
+		console.log(num3+" is maximum");
+	}
+}
+else {
+	if(num2>num3) {
+		console.log(num2+" is maximum");
+	}
+	else {
+		console.log(num3+" is maximum");
+	}
+}
