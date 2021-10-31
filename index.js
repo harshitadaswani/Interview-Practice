@@ -36,7 +36,7 @@ console.log("Maximum number is "+maxi);*/
 
 // Write a program to find the maximum out of three given numbers. The numbers are num1=8, num2=23 and num3=17.
 
-var num1=8; 
+/*var num1=8; 
 var num2=23;
 var num3=17;
 
@@ -54,5 +54,28 @@ else {
 	}
 	else {
 		console.log(num3+" is maximum");
+	}
+}*/
+
+// Write a program to find the minimum out of three given numbers. The numbers are num1=35, num2=29 and num3=46.
+
+var num1=35; 
+var num2=29;
+var num3=46;
+
+if(num1<num2) {
+	if(num1<num3) {
+		console.log(num1+" is minimum");
+	}
+	else {
+		console.log(num3+" is minimum");
+	}
+}
+else {
+	if(num2<num3) {
+		console.log(num2+" is minimum");
+	}
+	else {
+		console.log(num3+" is minimum");
 	}
 }
