@@ -59,7 +59,7 @@ else {
 
 // Write a program to find the minimum out of three given numbers. The numbers are num1=35, num2=29 and num3=46.
 
-var num1=35; 
+/*var num1=35; 
 var num2=29;
 var num3=46;
 
@@ -78,4 +78,22 @@ else {
 	else {
 		console.log(num3+" is minimum");
 	}
+}*/
+
+// Write program to take a month as an input from the user and find out whether the month has 31 days or not.
+
+var rs = require('readline-sync');
+var month= rs.question("Enter a month number:");
+
+if(month==='1'||month==='3'||month==='5'||month==='7'||month==='8'||month==='10'||month==='12') {
+	console.log("month has 31 days");
+}
+else if(month==='2') {
+	console.log("month has either 28 or 29 days");
+}
+else if(month>12) {
+	console.log("not a valid month number")
+}
+else {
+	console.log("month has 30 days");
 }
