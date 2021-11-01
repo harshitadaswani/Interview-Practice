@@ -115,3 +115,24 @@ for(i=1;i<=100;i++)	{
 		console.log(i);
 	}
 }*/
+
+//Print the following star pattern :-
+
+/* 
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+
+var i,j;
+var str="";
+for(i=0; i<=5; i++)	{
+	for(j=0; j<i; j++)	{
+		str=str+"*";
+	}
+	str=str+"\n";
+}
+console.log(str);*/
+
