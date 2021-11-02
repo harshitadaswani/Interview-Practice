@@ -164,7 +164,7 @@ for(i=0; i<=n; i++)	{
 
 // Write a program to take an input from a user and find its Factorial. Example: Factorial of 5 is 120
 
-var f=1,i,n;
+/*var f=1,i,n;
 var rs=require('readline-sync');
 
 n=rs.question("Enter a number: ");
@@ -173,4 +173,30 @@ for(i=1; i<=n; i++)	{
 	f=f*i;
 }
 
-console.log(f);
+console.log(f);*/
+
+// Write a Program to take a number input from user and find if the number is Prime or not.
+
+var i,n;
+var rs=require('readline-sync');
+
+n=rs.question("Enter a number: ");
+
+if(n==='1')	{
+	console.log("1 is neither prime nor composite");
+}
+else if(n==='2')	{
+	console.log("prime number");
+}
+else{
+	for(i=2; i<n; i++)	{
+	if(n%i!==0)	{
+		console.log("prime number");
+		break;
+	}
+	else {
+		console.log("not a prime number");
+		break;
+	}
+}
+}
