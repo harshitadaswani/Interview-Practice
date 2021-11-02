@@ -126,7 +126,7 @@ for(i=1;i<=100;i++)	{
 * * * * *
 */
 
-var i,j;
+/*var i,j;
 var str="";
 for(i=0; i<=5; i++)	{
 	for(j=0; j<i; j++)	{
@@ -136,3 +136,14 @@ for(i=0; i<=5; i++)	{
 }
 console.log(str);*/
 
+// Write a program to take a number input from user and print multiplication table 12 times for that number.
+
+var num, i;
+var rs = require('readline-sync');
+
+num = rs.question("Enter a number: ");
+
+for(i=0;i<=12;i++)	{
+	var product = num*i;
+	console.log(num+" * "+i+" = "+product);
+}
