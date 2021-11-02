@@ -150,7 +150,7 @@ for(i=0;i<=12;i++)	{
 
 // Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
 
-var first=0,second=1,third,i,n;
+/*var first=0,second=1,third,i,n;
 var rs= require('readline-sync');
 
 n =rs.question("Enter a number:");
@@ -160,4 +160,17 @@ for(i=0; i<=n; i++)	{
 	third= first+second;
 	first =second;
 	second =third;
+}*/
+
+// Write a program to take an input from a user and find its Factorial. Example: Factorial of 5 is 120
+
+var f=1,i,n;
+var rs=require('readline-sync');
+
+n=rs.question("Enter a number: ");
+
+for(i=1; i<=n; i++)	{
+	f=f*i;
 }
+
+console.log(f);
