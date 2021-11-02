@@ -138,7 +138,7 @@ console.log(str);*/
 
 // Write a program to take a number input from user and print multiplication table 12 times for that number.
 
-var num, i;
+/*var num, i;
 var rs = require('readline-sync');
 
 num = rs.question("Enter a number: ");
@@ -146,4 +146,18 @@ num = rs.question("Enter a number: ");
 for(i=0;i<=12;i++)	{
 	var product = num*i;
 	console.log(num+" * "+i+" = "+product);
+}*/
+
+// Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
+
+var first=0,second=1,third,i,n;
+var rs= require('readline-sync');
+
+n =rs.question("Enter a number:");
+
+for(i=0; i<=n; i++)	{
+	console.log(first);
+	third= first+second;
+	first =second;
+	second =third;
 }
