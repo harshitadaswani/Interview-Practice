@@ -84,9 +84,10 @@ console.log(mini(3,5,9,1));*/
 // Given n numbers, your function should return the maximum of them all. The number of parameters won't be accepted from user.
 /*Example:
 Input: findMax(3,5) ––> Output: 5
-Input: findMax(3,5,9,1) ––> Output: 9*/
+Input: findMax(3,5,9,1) ––> Output: 9
+(Hint: Lookup rest parameters in JavaScript)*/
 
-function maxi(...theArgs) {
+/*function maxi(...theArgs) {
   return theArgs.reduce((previous, current) => {
     return Math.max(previous,current);
   });
@@ -94,4 +95,40 @@ function maxi(...theArgs) {
 
 console.log(maxi(1,2,3,4,5,6));
 console.log(maxi(3,5));
-console.log(maxi(3,5,9,1));
+console.log(maxi(3,5,9,1));*/
+
+// Given three angles of a triangle, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all. Example:
+// Input: typeOfTriangle(30, 60, 90) ––> Output: Scalene Triangle
+
+var a,b,c;
+var rs=require("readline-sync");
+
+a=rs.question("Enter angle1 of a triangle: ");
+b=rs.question("Enter angle2 of a triangle: ");
+c=rs.question("Enter angle3 of a triangle: ");
+
+typeOfTriangle(a,b,c);
+
+function typeOfTriangle(a1,a2,a3)	{
+	//a1=parseInt(a, 10);
+	a1=Number(a);
+	//a2=parseInt(b, 10);
+	a2=Number(b);
+	//a3=parseInt(c, 10);
+	a3=Number(c);
+
+	if((a1+a2+a3)==180)	{
+		if(a===b && a===c)	{
+			console.log("Equilateral Triangle");
+		}
+		else if(a===b || a===c || b===c)	{
+			console.log("Isoceles Triangle");
+		}
+		else	{
+			console.log("Scalene Triangle");
+		}
+	}
+	else	{
+		console.log("Not a Triangle");
+	}
+}
