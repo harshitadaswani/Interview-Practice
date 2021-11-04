@@ -20,7 +20,7 @@ console.log(sum);*/
 /*Input: P=100, R=6%, T=2
 Output: 12*/
 
-var p,r,t,si;
+/*var p,r,t,si;
 var rs=require('readline-sync');
 
 p=rs.question("Enter principal amount: ");
@@ -32,4 +32,19 @@ r=Number(r);
 n=Number(n);
 si=(p*r*n)/100;
 
-console.log(si);
+console.log(si);*/
+
+// Write a program to calculate the kinetic energy of a body with mass 'm' and volume 'v'.
+
+//Formula : 0.5 * m * v * v
+
+var m,v,k;
+var rs=require('readline-sync');
+
+m= rs.question("Enter mass m: ");
+v= rs.question("Enter velocity v: ");
+m=Number(m);
+v=Number(v);
+k=0.5*m*v*v;
+
+console.log(k);
