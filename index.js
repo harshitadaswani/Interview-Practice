@@ -71,7 +71,7 @@ function functionname(...parameters)   //... is the rest parameter (triple dots)
 statement;
 }*/
 
-function mini(...theArgs) {
+/*function mini(...theArgs) {
   return theArgs.reduce((previous, current) => {
     return Math.min(previous,current);
   });
@@ -79,4 +79,19 @@ function mini(...theArgs) {
 
 console.log(mini(1,2,3,4,5,6));
 console.log(mini(3,5));
-console.log(mini(3,5,9,1));
+console.log(mini(3,5,9,1));*/
+
+// Given n numbers, your function should return the maximum of them all. The number of parameters won't be accepted from user.
+/*Example:
+Input: findMax(3,5) ––> Output: 5
+Input: findMax(3,5,9,1) ––> Output: 9*/
+
+function maxi(...theArgs) {
+  return theArgs.reduce((previous, current) => {
+    return Math.max(previous,current);
+  });
+}
+
+console.log(maxi(1,2,3,4,5,6));
+console.log(maxi(3,5));
+console.log(maxi(3,5,9,1));
